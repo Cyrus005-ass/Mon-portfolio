@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+     <header class="nav-bar">
+  <div class="presentatio">
+  <a href="INDEX.html" class="brand">
+    <div class="color" aria-hidden="true"></div>
+    <div class="name">
+      <h2>Assogba Cyrus-y</h2>
+      <p>Développeur</p>
+    </div>
+  </a>
+</div>
+  <nav class="navbar">
+    <a href="cv.html">CV</a>
+    <a href="projets.html">Projets</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+<!-- Icône menu -->
+<div class="menu" onclick="toggleMenu()">
+  <img src="menu.png" alt="menu site" class="menu">
+</div>
+  <div class="menu-buttons" id="menuButtons">
+     <button class="fermer-menu" onclick="toggleMenu()"><p>X</p></button>
+  <a href="cv.html">CV</a>
+  <a href="projets.html">Projets</a>
+  <a href="contact.html">Contact</a>
+
+</div>
+</header>
+    <!-- Menu plein écran -->
+<div class="menu-buttons" id="menuButtons">
+  <a href="cv.html">CV</a>
+  <a href="projets.html">Projets</a>
+  <a href="contact.html">Contact</a>
+</div>
+   
+<div class="container">
+    <!-- Partie gauche -->
+    <div class="contact-info">
+        <h1>Contact</h1>
+        <p>Nous avons hâte de vous lire</p>
+        <h3>Téléphone</h3>
+        <p>+229 01 99 87 12 52</p>
+        <h3>E-mail</h3>
+        <p><a href="mailto:cyrusyoupassogba@gmail.com">cyrusyoupassogba@gmail.com</a></p>
+    </div>
+
+    <!-- Partie droite -->
+    <form class="contact-form" action="https://formspree.io/f/xpwlgerk" method="POST">
+        <div class="form-group">
+            <div>
+                <label>Prénom</label>
+                <input type="text" name="prenom">
+            </div>
+            <div>
+                <label>Nom de famille</label>
+                <input type="text" name="nom">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div>
+                <label>E-mail *</label>
+                <input type="email" name="email" required>
+            </div>
+            <div>
+                <label>Objet</label>
+                <input type="text" name="objet">
+            </div>
+        </div>
+        <div class="form-group">
+            <div>
+                <label>Message</label>
+                <textarea name="message" rows="6"></textarea>
+            </div>
+            <div>
+                <button type="submit" class="btn-send">Envoyer</button>
+            </div>
+        </div>
+        
+    </form>
+</div>
+
+<hr class="horizontal">
+
+<footer class="bdp">
+  <!-- Téléphone -->
+  <div class="contact">
+    <h3>Téléphone</h3>
+    <p>+229 0199871252</p>
+  </div>
+
+  <!-- Email -->
+  <div class="contact">
+    <h3>E-mail</h3>
+    <a href="mailto:cyrusyoupassogba@gmail.com">cyrusyoupassogba@gmail.com</a>
+  </div>
+
+  <!-- Réseaux sociaux -->
+  <div class="contact">
+    <h3>Suivez-moi</h3>
+    <div class="socials">
+      <a href="https://Wa.me/22999871252"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/cyrus_youp/"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+
+  <!-- Mentions légales -->
+  <div class="contact">
+    <p>
+      Politique de confidentialité <br>
+      Mentions légales <br>
+      Politique de cookies
+    </p>
+  </div>
+
+  <!-- Crédit -->
+  <div class="contact">
+    <p>&copy; 2025 par Ari's. <br> Créé avec VS Code</p>
+  </div>
+</footer>
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menuButtons');
+    menu.classList.toggle('show');
+  }
+</script>
+
+</body>
+</html>

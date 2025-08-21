@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <header class="nav-bar">
+  <div class="presentatio">
+  <a href="INDEX.html" class="brand">
+    <div class="color" aria-hidden="true"></div>
+    <div class="name">
+      <h2>Assogba Cyrus-y</h2>
+      <p>Développeur</p>
+    </div>
+  </a>
+</div>
+  <nav class="navbar">
+    <a href="cv.html">CV</a>
+    <a href="projets.html">Projets</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+   <!-- Icône menu -->
+<div class="menu" onclick="toggleMenu()">
+  <img src="menu.png" alt="menu site" class="menu">
+</div>
+  <div class="menu-buttons" id="menuButtons">
+    <button class="fermer-menu" onclick="toggleMenu()"><p>X</p></button>
+  <a href="cv.html">CV</a>
+  <a href="projets.html">Projets</a>
+  <a href="contact.html">Contact</a>
+</div>
+</header>
+  
+<!-- Menu plein écran -->
+<div class="menu-buttons" id="menuButtons">
+  <a href="cv.html">CV</a>
+  <a href="projets.html">Projets</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+
+   <section class="presentation">
+  <!-- PHOTO -->
+  <div class="cercle">
+    <img src="Aris.jpg" alt="Ma photo" id="image">
+  </div>
+
+  <!-- TEXTE + BOUTONS -->
+  <div class="apropos">
+    <h1>Salut</h1>
+    <h3>À propos de moi</h3>
+    <p>
+      Je me nomme <strong>Cyrus-y Assogba</strong>, étudiant en Systèmes Informatiques et Logiciels.
+      Je me suis aventuré dans le web pour découvrir ce monde. 
+      Au début avec JS, j'avais envie de jeter mon PC 😅, mais peu à peu j’ai compris son fonctionnement.  
+      Je m’adapte aux situations et je trouve vite des solutions.  
+      Je suis également passionné par la Cybersécurité et bientôt...
+    </p>
+
+    <div class="boutons">
+      <a href="cv.html" class="btn jaune">CV</a>
+      <a href="projets.html" class="btn rouge">Projets</a>
+      <a href="contact.html" class="btn bleu">Contact</a>
+    </div>
+  </div>
+</section>
+
+<hr class="horizontal">
+
+<footer class="bdp">
+  <!-- Téléphone -->
+  <div class="contact">
+    <h3>Téléphone</h3>
+    <p>+229 0199871252</p>
+  </div>
+
+  <!-- Email -->
+  <div class="contact">
+    <h3>E-mail</h3>
+    <a href="mailto:cyrusyoupassogba@gmail.com">cyrusyoupassogba@gmail.com</a>
+  </div>
+
+  <!-- Réseaux sociaux -->
+  <div class="contact">
+    <h3>Suivez-moi</h3>
+    <div class="socials">
+      <a href="https://Wa.me/22999871252"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.instagram.com/cyrus_youp/"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+
+  <!-- Mentions légales -->
+  <div class="contact">
+    <p>
+      Politique de confidentialité <br>
+      Mentions légales <br>
+      Politique de cookies
+    </p>
+  </div>
+
+  <!-- Crédit -->
+  <div class="contact">
+    <p>&copy; 2025 par Ari's. <br> Créé avec VS Code</p>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('menuButtons');
+    menu.classList.toggle('show');
+  }
+</script>
+
+
+</body>
+</html>
